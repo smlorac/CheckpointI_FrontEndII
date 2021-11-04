@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    text-align: center;
+    background-color: rgb(2, 2, 2);
+    color: wheat;
+    font-family: 'Lora', serif;
+}
+
+header{
+  padding: 20px;
+}
+
+h1{
+  font-size: 40px;
+}
+
+h2{
+  padding: 20px;
+  font-size: 30px;
+}
+
+fieldset{
+  width: max-content;
+  height: max-content;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+legend{
+  padding: 10px;
+}
+
+.botao{
+  padding-top: 20px;
+}
+
