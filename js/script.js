@@ -3,6 +3,8 @@
 let nome = document.querySelector('#nome');
 let historia = document.querySelector('#historia');
 let foto = document.querySelector('#foto');
+let casas = document.getElementsByName('casas');
+let vivo = document.getElementById('vivo');
 
 //selecionar botão
  
@@ -33,5 +35,20 @@ function criarCard(evento){
     localCards.appendChild(img); 
     img.style.width = '50%';
 
+    for (let i = 0; i < casas.length; i++){
+        if (casas[i].checked){
+            casa = casas[i].value;
+            break;
+        }
+    }
+    
+    let p2 = document.createElement('p');
+    p2.innerText = "Casa: " + casa;
+    localCards.appendChild(p2);
+
+    vivo.checked ? vivoTxt = "Viveu até o fim da história :)" : vivoTxt = "Não viveu para o fim da história :(";
+    let p3 = document.createElement('p');
+    p3.innerText = vivoTxt;
+    localCards.appendChild(p3);
 };
 

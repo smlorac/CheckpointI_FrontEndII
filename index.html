@@ -23,6 +23,7 @@
     <div class="formulario">
         <form action="#">
             <fieldset>
+                <legend>Preencha as informações: </legend>
                 <legend>Nome</legend>
                 <input type="text" name="nome" id="nome">
                 <legend>Informações</legend>
@@ -31,6 +32,17 @@
                 <!-- <input type="text" name="historia" id="historia"> -->
                 <legend>URL da foto</legend>
                 <input type="text" name="foto" id="foto">
+                <div>
+                    <label for="casas"><legend>Casa de Hogwarts</legend></label>
+                    <input type="radio" name="casas" value="sonserina" class="opcao">Sonserina</input>
+                    <input type="radio" name="casas" value="grifinoria" class="opcao">Grifinória</input>
+                    <input type="radio" name="casas" value="corvinal" class="opcao">Corvinal</input>
+                    <input type="radio" name="casas" value="lufa-lufa" class="opcao">Lufa-Lufa</input>
+                    <input type="radio" name="casas" value="naoAplica" class="opcao">Não se aplica</input>
+                </div>
+                <div id="vivoDiv">
+                    <input type="checkbox" id="vivo">Ficou vivo até o final da história?</input>
+                </div>
         </form>
     </div>
 
@@ -39,7 +51,7 @@
     </div>
     </fieldset>
 
-
+    <h1 id="tituloCards">Cards</h1>
     <div id="cards"></div>
 
     <script src="./js/script.js"></script>
