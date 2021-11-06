@@ -37,7 +37,21 @@ function criarCard(evento){
 
     for (let i = 0; i < casas.length; i++){
         if (casas[i].checked){
+
             casa = casas[i].value;
+
+            if (casa == "sonserina"){
+                casa = "Sonserina";
+            } else if (casa == "grifinoria"){
+                casa = "Grifinória";
+            } else if (casa == "corvinal"){
+                casa = "Corvinal";
+            } else if (casa == "lufa-lufa"){
+                casa = "Lufa-Lufa";
+            } else {
+                casa = "Não se aplica";
+            }
+
             break;
         }
     }
@@ -50,5 +64,9 @@ function criarCard(evento){
     let p3 = document.createElement('p');
     p3.innerText = vivoTxt;
     localCards.appendChild(p3);
+
+    localCards.style.border = "thick solid wheat";
+    localCards.style.width = "50%";
+    localCards.style.margin = "0 auto";
 };
 

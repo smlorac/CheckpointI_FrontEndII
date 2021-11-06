@@ -8,6 +8,11 @@
 body{
     text-align: center;
     background-color: rgb(2, 2, 2);
+    background-image: url(../img/wallpaper-castle.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     color: wheat;
     font-family: 'Lora', serif;
 }
@@ -37,7 +42,7 @@ legend{
 }
 
 .botao{
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 #vivoDiv{
@@ -46,4 +51,10 @@ legend{
 
 #tituloCards{
   padding: 20px;
+}
+
+#rodape{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 }

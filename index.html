@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <title>Checkpoint I</title>
 </head>
 
 <body>
-    
+
     <header>
         <h1>Cards de Harry Potter</h1>
 
@@ -33,7 +37,9 @@
                 <legend>URL da foto</legend>
                 <input type="text" name="foto" id="foto">
                 <div>
-                    <label for="casas"><legend>Casa de Hogwarts</legend></label>
+                    <label for="casas">
+                        <legend>Casa de Hogwarts</legend>
+                    </label>
                     <input type="radio" name="casas" value="sonserina" class="opcao">Sonserina</input>
                     <input type="radio" name="casas" value="grifinoria" class="opcao">Grifinória</input>
                     <input type="radio" name="casas" value="corvinal" class="opcao">Corvinal</input>
@@ -43,16 +49,20 @@
                 <div id="vivoDiv">
                     <input type="checkbox" id="vivo">Ficou vivo até o final da história?</input>
                 </div>
+                <div class="botao">
+                    <button type="submit" id="botao">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </div>
         </form>
-    </div>
-
-    <div class="botao">
-        <button type="submit" id="botao">Enviar</button>
     </div>
     </fieldset>
 
     <h1 id="tituloCards">Cards</h1>
     <div id="cards"></div>
+
+    <footer>
+        <p id="rodape">Caroline Machado da Silva | 2021</p>
+    </footer>
 
     <script src="./js/script.js"></script>
 </body>
